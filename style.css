@@ -13,13 +13,22 @@ body {
 }
 
 #header {
-    width: 500px;
-    height: 780px;
-    background-image: url('./img/mobile.jpg');
+    /* width: 700px; */
+    height: 700px;
+    /* background-image: url('./img/anur.png'); */
     background-size: cover;
-    /* margin-top: 30px; */
+    /* margin-right: 0px; */
+    /* left: -2000px; */
     border-radius: 40PX;
 
+}
+.main-img img{
+    background-size: cover;
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    z-index: 3;
+    left: -65px;
 }
 
 .logo {
@@ -36,8 +45,11 @@ body {
 nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    position:absolute;
+    /* width: 100%; */
     /* flex-wrap: wrap; */
+    left: -700px;
 
 }
 
@@ -104,11 +116,80 @@ nav ul li a:hover::after {
     margin-left: 50%;
     margin-top: -100px;
 }
-.about{
+
+.about {
     padding: 80 0;
+    color: #ababab;
 }
+
 .row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.ab-col-1{
+    flex-basis: 35%;
+}
+.ab-col-1 img{
+    /* right: 30000px; */
+    margin-right: 540px;
+}
+.ab-col-2{
+    flex-basis: 60%;
+    position:absolute;
+    margin-top: 210px;
+    margin-left: 50px;
+    width: 800px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-content ul li{
+    /* list-style: none; */
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+.tab-content ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active-tab{
+    display: block;
+}
+.us p{
+    font-size: 20px;
+}
+.us span{
+    color: #b54769;
+    /* font-size: 14px; */
 }
