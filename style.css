@@ -15,7 +15,7 @@ body {
 #header {
     width: 500px;
     height: 780px;
-    background-image: url('/Portfolio-/img/mobile.jpg');
+    background-image: url('./img/mobile.jpg');
     background-size: cover;
     /* margin-top: 30px; */
     border-radius: 40PX;
