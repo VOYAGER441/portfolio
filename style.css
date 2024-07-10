@@ -444,7 +444,10 @@ form textarea {
 /* /* mobile responsive */
 @media only screen and (max-width:600px) {
 
-
+    body{
+        overflow-x:hidden;
+        /* width: 45++0px; */
+    }
     .main-img img {
         margin-top: 190px;
         height: 450px;
