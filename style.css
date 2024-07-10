@@ -447,6 +447,7 @@ form textarea {
     body{
         overflow-x:hidden;
         /* width: 45++0px; */
+        touch-action: manipulation;
     }
     .main-img img {
         margin-top: 190px;
