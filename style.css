@@ -512,7 +512,7 @@ form textarea {
     }
     .col-left{
         /* margin-left: 20px; */
-        flex-basis: 80%;
+        flex-basis: 100%;
         margin-left: 20px;
     }
     .col-left p{
